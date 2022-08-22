@@ -102,6 +102,11 @@
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.js"></script>
 
+<script>
+    $('#flash-overlay-modal').modal();
+    $('div.alert').not('.alert-important').delay(1500).fadeOut(280);
+</script>
+
 @stack('scripts')
 
 </body>
