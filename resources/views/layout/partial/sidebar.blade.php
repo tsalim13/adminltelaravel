@@ -13,7 +13,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
+            <a href="{{ url('/') }}" class="nav-link {{ (request()->is('/*')) ? 'active' : '' }}">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Menu 1
@@ -22,7 +22,7 @@
             </a>
           </li>
           <li class="nav-item {{ (request()->is('*')) ? 'menu-open' : '' }}">
-            <a href="#" class="nav-link {{ (request()->is('/*')) ? 'active' : '' }}">
+            <a href="#" class="nav-link {{ (request()->is('*')) ? 'active' : '' }}">
               <i class="nav-icon fas fa-copy"></i>
               <p>
                 Menu 2
@@ -32,25 +32,25 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{ url('/') }}" class="nav-link">
+                <a href="{{ route('1') }}" class="nav-link {{ (request()->is('1')) ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Welcome 1</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ url('/2') }}" class="nav-link ">
+                <a href="{{ route('2') }}" class="nav-link {{ (request()->is('2')) ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Welcome 2</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ url('/3') }}" class="nav-link ">
+                <a href="{{ route('3') }}" class="nav-link {{ (request()->is('3')) ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Welcome 3</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ url('/4') }}" class="nav-link ">
+                <a href="{{ route('4') }}" class="nav-link {{ (request()->is('4')) ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Welcome 4</p>
                 </a>
