@@ -89,7 +89,7 @@
 
 {{-- ************************************************************************************************************************************************************ --}}
 
-{{-- 
+{{--
 @extends('layout.app')
 
 @section('breadcrumb')
@@ -156,7 +156,7 @@
             <div class="card-header">
                 <h4>DataTable example with component</h4>
             </div>
-    
+
         <div class="card-body">
             <table id="example1" class="table table-bordered table-striped">
                 <thead>
@@ -192,7 +192,7 @@
                 </tfoot>
             </table>
         </div>
-    
+
     </div>
 
 @endsection
